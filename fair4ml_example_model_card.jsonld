@@ -1,0 +1,23 @@
+{
+  "@context": "https://w3id.org/fair4ml",
+  "@id": "https://example.org/my-model",
+  "@type": "fair4ml:MLModel",
+  "name": "Name of the model",
+  "identifier": { "@id": "https://example.org/my-model" },
+  "description": "Reviews how external libraries and dependencies are managed to ensure compatibility and security.",
+  "keywords": [
+    "sustaninability", "dependencies"
+  ],
+  "version": "1.0.0",
+  "author": {
+    "@type": "Person",
+    "name": "Pepito"
+  },
+  "created": "03-04-2025",
+  "fineTunedFrom": {"@id":"https://example.org/parent-model"},
+  "mlTask": { "@id": "https://example.org/my-task" },
+  "modelCategory": { "@id": "ex:Supervised"},
+  "intendedUse": "HPurpose and intended use stated to enable users to make a decision as to the suitability of this creative work ",
+  "referencePublication": {"@id": "https://example.org/my-paper-doi", "@type": "ScholarlyArticle"},
+  "license": "https://spdx-license"
+}
