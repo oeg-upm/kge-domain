@@ -1,4 +1,4 @@
-# kge-domain
+# KGE Domain FAIR4ML
 Repository to create a formalization of tasks, categories and domains in KGE
 
 ## Tasks
@@ -19,3 +19,26 @@ Las tres etiquetas se pueden homogeneizar en una sola (y de hecho tendría más 
 |Knowledge Graph Completion|**SUELE USARSE EN CONJUNTO CON LOS KGEs, pero no siempre** Predicting missing elements in incomplete knowledge graphs (triples, relations, or entities)|#REF|
 |Representation Learning|Learning useful features automatically from data|#REF|
 |Recommendation systems|System aimed to learn a filtering criteria to predict the preference hat a user would give to an element |#REF|
+
+# Taxonomía
+## Proceso
+La referencia utilizada para modelar la taxonomía es la planteada en el paper de [Shen et al. (2022)](https://doi.org/10.1016/j.knosys.2022.109597)
+En esta taxonomía, se plantea una jerarquía de tres niveles. En el nivel principal, se distinguen tres tipos: *Structural information-based KGC Technologies*, *Additional information-based KGC technologies* y *Other KGC Technologies*. Dentro de las dos primeras se plantean dos subgrupos, y de ellos cuelgan los nodos raíz con los tipos ya específicos. Se muestra en la siguiente figura:
+![Taxonomy](https://instasize.com/p/44a3ecda5bfc67e668094d11d1ef7835f836824de187b8048142e87597ef77ae)
+
+De esta categorización, se ha empleado por el momento el segundo nivel de la taxonomía, ya que el nivel raíz es demasiado poco específico. En el futuro se explorará el uso del nivel más bajo. Se distingue por tanto en este punto entre: **Semantic Matching Models**, **Translation Models**,**Internal Side Information Inside KGs**, **External Side Information Outside KGs**, **Other KGE Technologies**.
+
+Las definiciones de estas categorías, de acuerdo con el artículo, son las siguientes
+|CATEGORY | DESCRIPTION |
+|--|--|
+|**Semantic Matching Models**| Kind of models which compute semantic matching-based scoring functions by measuring the semantic similarities of entity or relation embeddings in latent embedding space|
+|**Translation Models**| Encode entities as low-dimensional embeddings and relations between entities as translation vectors. Defines a relation-dependent translation scoring function to measure te probability of a triple through a distance metric. |
+| **Internal side information inside KGs** | Integrates the inherent rich KG information (i.e. internal information) during training time to capture useful features within the embeddings |
+| **External extra information outside KGs**| KGE models that exploit external informatiom, such as rules or third-party auxiliary data during training|
+|**Other KGC technologies** | KGC techniques oriented to special domains, such as Temporal Knowledge Graphs, Commonsense Knowledge Grahs or Hyper-relational Knowledge Graphs|
+
+# Datasets
+(Los datasets específicos de KGE los he buscado y no aparecen en W3id, por ejemplo WordNet sí aparece, pero WN18 o WN18NN que son los que se emplean para KGE no están. Puedo aportar enlaces y referencias porque están recogidas en PyKeen) 
+
+
+
