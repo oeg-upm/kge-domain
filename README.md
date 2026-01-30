@@ -1,5 +1,7 @@
 # KGE Domain FAIR4ML
 Repository to create a formalization of tasks, categories and domains in KGE
+## Comparativa de técnicas por campo
+En [este enlace](https://docs.google.com/spreadsheets/d/1aU-pKB7QewB-RVnyqguNmcOd31Lt4PS3nFkFHWeHmn8/edit?usp=sharing) se recoge la hoja de GoogleSheets con el resumen de los resultados obtenidos por campo y por modelo.
 
 ## Tasks
 ### Proceso
