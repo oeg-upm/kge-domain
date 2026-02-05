@@ -1,3 +1,4 @@
+
 # KGE Domain FAIR4ML
 Repository to create a formalization of tasks, categories and domains in KGE
 ## Comparativa de técnicas por campo
@@ -13,14 +14,14 @@ Las tres etiquetas se pueden homogeneizar en una sola (y de hecho tendría más 
 ### Definición
 |TASK  | DESCRIPTION | REFERENCE |
 |--|--|--|
-|Knowledge Graph Embedding| Embedding entities and relationships of multi-relational data in low-dimensional vector spaces  | Duda, las referencias tienen que ser a algo en concreto? Tipo a otra cosa de W3C o como? La primera definición que se dio fue en el paper de TransE|
-|Information Retrieval|A process through which rant information is obtained and delivered based on specific information needs | #REF|
-|Reinforcement Learning|Learning paradigm concerned about how an intelligent agent takes actions in a dynamic environment in order to maximize a reward function.|#REF|
-|Question Answering|Automatically answering questions posed by humans in natural language |#REF|
-|Link Prediction|Predicting the existence of a potential link between two nodes in a graph|#REF|
-|Knowledge Graph Completion|**SUELE USARSE EN CONJUNTO CON LOS KGEs, pero no siempre** Predicting missing elements in incomplete knowledge graphs (triples, relations, or entities)|#REF|
-|Representation Learning|Learning useful features automatically from data|#REF|
-|Recommendation systems|System aimed to learn a filtering criteria to predict the preference hat a user would give to an element |#REF|
+|Knowledge Graph Embedding| Embed components of a KG including entities and relations into continuous vector spaces  | [Wang et al. (2017)](https://doi.org/10.1109/TKDE.2017.2754499)|
+|Information Retrieval|Finding material of unstructured nature that satisfies an information need from within large collections | [Manning et al. (2009)](https://nlp.stanford.edu/IR-book/information-retrieval-book.html)|
+|Reinforcement Learning|Learning what a system should do -how to map situations to actions- so as to maximize a numerical reward signal.|[Sutton&Barto (2014)](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)|
+|Question Answering|Task that aims to answer natural language questions with a KB acting as its knowledge source|[Lan et al. (2022)](https://doi.org/10.1109/TKDE.2022.3223858)|
+|Link Prediction|Predicting whether two nodes in a network are likely to have a link|[Zhang&Chen (2018)](https://proceedings.neurips.cc/paper_files/paper/2018/file/53f0d7c537d99b3824f0f99d62ea2428-Paper.pdf)|
+|Knowledge Graph Completion|Predict and replenish the missing part of triples within a Knowledge Graph|[Shen et al. (2022)](https://doi.org/10.1016/j.knosys.2022.109597)|
+|Representation Learning|A set of techniques that allow a system to discover different representations of the data|[Sakhnini et al. (2021)](https://doi.org/10.1016/j.knosys.2022.109597)|
+|Recommendation systems|Information filtering systems that deal with the problem of information overload by filtering vital information fragments out of large amount of dinamically generated information according to user's preferences, interest or observed behavior. |[Isinkaye et al. (2015)](https://doi.org/10.1016/j.eij.2015.06.005)|
 
 # Taxonomía
 ## Proceso
@@ -40,7 +41,21 @@ Las definiciones de estas categorías, de acuerdo con el artículo, son las sigu
 |**Other KGC technologies** | KGC techniques oriented to special domains, such as Temporal Knowledge Graphs, Commonsense Knowledge Grahs or Hyper-relational Knowledge Graphs|
 
 # Datasets
-(Los datasets específicos de KGE los he buscado y no aparecen en W3id, por ejemplo WordNet sí aparece, pero WN18 o WN18NN que son los que se emplean para KGE no están. Puedo aportar enlaces y referencias porque están recogidas en PyKeen) 
+En [PyKeen](https://github.com/pykeen/pykeen?tab=readme-ov-file) se listan varios datasets, pero en los papers analizados no aparecen todos ellos. En esta tabla se recogen sólo los que aparecen en los papers estudiados:
+| DATASET | REFERENCE |
+| -- | -- |
+| DBpedia50 | [Shi et al. (2017)](https://arxiv.org/abs/1711.03438) |
+| FB15k | [Bordes et al. (2013)](http://papers.nips.cc/paper/5071-translating-embeddings-for-modeling-multi-relational-data.pdf) |
+| FB15k-237 | [Toutanova et al. (2015)](https://www.aclweb.org/anthology/W15-4007/)|
+| Freebase | [Bollacker et al. (2008)](https://research.google/pubs/freebase-a-collaboratively-created-graph-database-for-structuring-human-knowledge/)
+| WN18 | [Bordes et al. (2014)](https://arxiv.org/abs/1301.3485)
+| WN18-RR | [Toutanova et al. (2015)](https://www.aclweb.org/anthology/W15-4007/)
+| NELL | [Mitchell et al. (2010)](http://rtw.ml.cmu.edu/rtw/)
+| YAGO3-10 | [Mahdisoltani et al. (2015)](http://service.tsi.telecom-paristech.fr/cgi-bin//valipub_download.cgi?dId=284)
+
+# Métricas
+(Esta es la parte con la que estoy ahora)
+
 
 
 
